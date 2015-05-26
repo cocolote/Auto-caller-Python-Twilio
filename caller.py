@@ -1,4 +1,5 @@
 import os
+import sys
 from flask import Flask
 from flask import Response
 from flask import render_template
@@ -7,6 +8,9 @@ import twilio.twiml
 import praw
 
 app = Flask(__name__)
+
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 @app.route('/')
 def home():
