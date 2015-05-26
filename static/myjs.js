@@ -1,7 +1,7 @@
 $(function(){
   var myVar=setInterval(function(){myTimer()},1000);
 
-  var myTime = new Date("May 26, 2015 18:25:00");
+  var myTime = new Date("May 26, 2015 18:28:00");
   function myTimer() {
     var d = new Date();
     var dd = Date(myTime - d);
@@ -13,7 +13,9 @@ $(function(){
 
     if (h <= 0 && m <= 0 && s <= 0){
       clearInterval(myVar);
-      $('#clock').empty();
+      $('#clock').text('00:00:00');
+      $('#phone-container h1').removeClass('mdi-communication-call');
+      $('#phone-container h1').addClass('mdi-notification-phone-in-talk');
       $.get('/make_call');
     }
 
