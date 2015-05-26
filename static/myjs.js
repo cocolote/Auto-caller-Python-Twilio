@@ -1,7 +1,7 @@
 $(function(){
   var myVar=setInterval(function(){myTimer()},1000);
 
-  var myTime = new Date("May 26, 2015 15:49:00");
+  var myTime = new Date("May 26, 2015 16:00:00");
   function myTimer() {
     var d = new Date();
     var dd = Date(myTime - d);
