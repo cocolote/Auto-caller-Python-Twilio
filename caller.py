@@ -31,8 +31,7 @@ def message():
   titles = r.get_subreddit('technology').get_top(limit=1)
   
   resp = twilio.twiml.Response()
-  resp.say("Hey Chris!. How is it going?.\
-  This is Ezequiel with some news from Reddit.")
+  resp.say("Hey Chris!. How is it going?. This is Ezequiel with some news from Reddit.")
   for x in titles:
     resp.say(str(x))
   resp.say("Cheers!")
