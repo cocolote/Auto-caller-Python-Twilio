@@ -1,3 +1,38 @@
+body {
+  background: -webkit-linear-gradient(bottom right, #fff8e1, #64b5f6);
+  background: -o-linear-gradient(bottom right, #fff8e1, #64b5f6);
+  background: linear-gradient(to top left, #fff8e1, #64b5f6);
+  background-repeat: none;
+  height: 100vh;
+}
+
 h1 {
-  color: red;
+  color: #f57c00;
+  text-shadow: 1px 2px 10px #333;
+}
+
+#call-container {
+  background-color: rgba(0,0,0,0.5);
+  width: 50%;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5vh;
+  border-radius: 1em;
+  padding: 1em;
+  -webkit-box-shadow: 2px 2px 10px -2px #111;
+  -moz-box-shadow: 2px 2px 10px -2px #111;
+  -ms-box-shadow: 2px 2px 10px -2px #111;
+  -o-box-shadow: 2px 2px 10px -2px #111;
+  box-shadow: 2px 2px 10px -2px #111;
+}
+
+#phone-container {
+  position: fixed;
+  bottom: 10vh;
+  right: 5%;
+}
+
+#phone-container h1 {
+  font-size: 15em;
 }
