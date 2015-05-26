@@ -20,8 +20,8 @@ def make_call():
 
   call = client.calls.create(to="+13054406756",
                              from_="+16175130992",
-                             url="http://127.0.0.1:5000/message")
-                             # url="http://obscure-dawn-3571.herokuapp.com/message")
+                             # url="http://127.0.0.1:5000/message")
+                             url="http://obscure-dawn-3571.herokuapp.com/message")
 
   return "Call in progress"
 
