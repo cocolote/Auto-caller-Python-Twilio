@@ -9,8 +9,6 @@ import praw
 
 app = Flask(__name__)
 
-reload(sys)
-sys.setdefaultencoding('utf8')
 
 @app.route('/')
 def home():
@@ -31,6 +29,8 @@ def make_call():
 
 @app.route('/message', methods=['GET','POST'])
 def message():
+  reload(sys)
+  sys.setdefaultencoding('utf8')
   r = praw.Reddit(user_agent='web_caller_zeke')
   titles = r.get_subreddit('technology').get_top(limit=1)
   
